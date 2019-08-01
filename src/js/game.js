@@ -5,7 +5,10 @@ function Game() {
       winner = playerOne
     }else  if(playerOne.currentChoice == "scissors" && playerTwo.currentChoice == "paper") {
       winner = playerOne
-    }
+    } else  if(playerOne.currentChoice == "paper" && playerTwo.currentChoice == "rock") {
+      winner = playerOne
+    } else
+    winner = playerTwo
     return winner
   }
 }
