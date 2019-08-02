@@ -1,14 +1,14 @@
 function Game() {
-  this.checkResult = function(playerOne, playerTwo) {
-    let winner 
-    if(playerOne.currentChoice == "rock" && playerTwo.currentChoice == "scissors") {
+  this.checkResult = function (playerOne, playerTwo) {
+    let winner
+    if (playerOne.currentChoice == "rock" && playerTwo.currentChoice == "scissors") {
       winner = playerOne
-    }else  if(playerOne.currentChoice == "scissors" && playerTwo.currentChoice == "paper") {
+    } else if (playerOne.currentChoice == "scissors" && playerTwo.currentChoice == "paper") {
       winner = playerOne
-    } else  if(playerOne.currentChoice == "paper" && playerTwo.currentChoice == "rock") {
+    } else if (playerOne.currentChoice == "paper" && playerTwo.currentChoice == "rock") {
       winner = playerOne
     } else
-    winner = playerTwo
+      winner = playerTwo
     return winner
   }
 }

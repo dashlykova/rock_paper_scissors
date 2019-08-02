@@ -17,8 +17,7 @@ context('Your Description of the test scenario', () => {
     browser.close();
   });
 
-  // Example test
-  it('renders the correct page title', async () => {
-    expect(await browser.page.title()).to.eql('Puppeteer Mocha Scaffold');
+  it('contains 3 icons', async () => {
+    expect(await browser.page.$$('.choice')).to.have.lengthOf(3)
   });
 });
